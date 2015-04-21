@@ -1116,7 +1116,7 @@ select {
 
 .slider {
   overflow: hidden;
-  background-color: #000;
+  background-color: #fff;
 }
 .slider .slide-group {
   position: relative;
