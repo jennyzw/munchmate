@@ -4,11 +4,13 @@
 	border: 1px solid black;
 	font-size: x-small;
 	display: inline-block;
-	padding: 4px;
+	/*padding: 4px; */
 	overflow-x: auto;
 	margin: 2px;
 }
 
-.messaging {
+.profile-image {
+	width:100px;
+	height: 100px;
 
 }
