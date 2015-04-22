@@ -4,3 +4,7 @@
   white-space: normal;
   color: #000;
 }
+
+#name {
+	text-align: center;
+}
