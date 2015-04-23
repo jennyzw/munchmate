@@ -6,15 +6,23 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <title>MunchMate</title>
-    
+
+
     <!--CSS-->
       <link href="css/ratchet.css" rel="stylesheet">
       <link href="css/messaging.css" rel="stylesheet">
+      <link href="css/custom.css" rel="stylesheet">
       <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
       <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'> 
     
     <!--Scripts-->
       <script src="js/ratchet.js"></script>
+
+    <!-- Loading Bootstrap -->
+    <link href="dist/css/vendor/bootstrap.min.css" rel="stylesheet">
+    <!-- Loading Flat UI -->
+    <link href="dist/css/flat-ui.min.css" rel="stylesheet">
+
     
 </head>
 
@@ -22,10 +30,10 @@
   <header class="bar bar-nav">
     <button class="btn btn-link btn-nav pull-left"><a class="icon icon-home" href="swipe.html"></a></button>
     <button class="btn btn-link btn-nav pull-right"><a class="icon icon-gear" href="#"></a></button>
-    <h1 class="title">Messages</h1>
+    <h1 class="title"><img src="messagesheader.png" width="auto" height="auto"></img></h1>
   </header> 
 
-  <div class="content" align="center">
+  <div class="content container" align="center">
       <p class="content-padded messaging">
           <a class="icon message-icon" href="abby.html" data-transition="slide-in"><img src="abbyphoto.jpg" class="profile-image"/>
           </a>
@@ -36,29 +44,35 @@
           <a class="icon message-icon" href="jasmine.html" data-transition="slide-in"><img src="jasminephoto.jpg" class="profile-image"/>
           </a>
 
-          <a class="icon message-icon" href="#mya" data-transition="slide-in">Mya, 19
+          <a class="icon message-icon" href="#mya" data-transition="slide-in"><br><span class="fui-user" font-size="48" align="center"></span><br><br>Mya, 19
           </a>
 
-          <a class="icon message-icon" href="#cate" data-transition="slide-in">Cate, 19
+          <a class="icon message-icon" href="#cate" data-transition="slide-in"><br><span class="fui-user" font-size="48" align="center"></span><br><br>Cate, 19
           </a>
 
-          <a class="icon message-icon" href="#alysso" data-transition="slide-in">Alysso, 21
+          <a class="icon message-icon" href="#alysso" data-transition="slide-in"><br><span class="fui-user" font-size="48" align="center"></span><br><br>Alysso, 21
           </a>
 
-          <a class="icon message-icon" href="#lola" data-transition="slide-in">Lola, 20
+          <a class="icon message-icon" href="#lola" data-transition="slide-in"><br><span class="fui-user" font-size="48" align="center"></span><br><br>Lola, 20
           </a>
 
-          <a class="icon message-icon" href="#tasha" data-transition="slide-in">Tasha, 18
+          <a class="icon message-icon" href="#tasha" data-transition="slide-in"><br><span class="fui-user" font-size="48" align="center"></span><br><br>Tasha, 18
           </a>
 
-          <a class="icon message-icon" href="#kyra" data-transition="slide-in">Kyra, 18
+          <a class="icon message-icon" href="#kyra" data-transition="slide-in"><br><span class="fui-user" font-size="48" align="center"></span><br><br>Kyra, 18
           </a>
 
-          <a class="icon message-icon" href="#morgan" data-transition="slide-in">Morgan, 21
+          <a class="icon message-icon" href="#morgan" data-transition="slide-in"><br><span class="fui-user" font-size="48" align="center"></span><br><br>Morgan, 21
           </a>
       </p>
   </div>
 
 <script src="js/stay_standalone.js"></script>
+
+    <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+    <script src="/dist/js/vendor/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/dist/js/vendor/video.js"></script>
+    <script src="/dist/js/flat-ui.min.js"></script>
 </body>
 </html>

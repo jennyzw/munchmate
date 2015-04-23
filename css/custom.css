@@ -8,3 +8,41 @@
 #name {
 	text-align: center;
 }
+
+.content {
+	background-color: #ECF0F1;*/ /*light grey*/
+}
+
+.bar, .bar-nav {
+	background-color: #9B59B6; /*light purple*/
+	border-bottom: 1px solid #2C3E50;
+}
+
+.bar-footer {
+	border-top: 1px solid #2C3E50;
+}
+.input-row {
+	border-bottom: 1px solid #9B59B6 ;
+}
+
+a:hover {
+	color: #8E44AD;
+}
+
+.title {
+	color: #ECF0F1;
+}
+
+.fui-user {
+	font-size: 60px;
+	color: ;
+}
+
+.icon-home, .icon-gear, .icon-left-nav, .icon-compose {
+	color: #F1C40F;
+}
+
+.message-icon {
+	border: 1px solid #BDC3C7;
+	color: #95A5A6;
+}
