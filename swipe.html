@@ -4,7 +4,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-webapp-status-bar-style" content="black">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi" />
-    <title>this one's ittttt</title>
+    <title>Swipe Feed</title>
     <!-- Include the compiled Ratchet CSS -->
     <link href="css/ratchet.css" rel="stylesheet">
     <!-- Include the compiled Ratchet JS -->
@@ -39,14 +39,20 @@
               American, Chinese <br>
               MIT Campus <br></p>
 
-            <!-- Icons in standard bar fixed to the bottom of the screen -->
-            <!-- <div class="bar bar-standard bar-footer"> -->
-            <a href="#popupDining1" data-role="button" data-rel="popup">See full profile</a>
-                    <div data-role="popup" id="popupDining1">
-                        <!-- <a href="#dining" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a> -->
-                        <img src="fullprofile1.png"></img>
+            <a href="#fullprofile1" data-role="button" data-rel="popup">See full profile</a>
+                    <div data-role="popup" id="fullprofile1">
+                        <a href="#dining" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                        <h2 id="name">Abby, 21</h2>
+                        <img src="abbyphoto.jpg" width="100%">
+                        <h4>1 mile away</h4>
+                        <p id="text">
+                          Suggested location: MIT Campus <br>
+                          Year: 2015 <br>
+                          Major: Media Arts & Sciences <br>
+                          Interests: Music, Being queen <br></p>
                     </div>
 
+            <!-- <button class="btn btn-positive btn-block btn-outlined">See full profile</button> -->
 
             <!-- <button class="btn btn-positive btn-block btn-outlined"> -->
             <button class="btn btn-positive btn-block">Message Mate</button>
@@ -73,7 +79,19 @@
                 Tower, Pom, Lulu <br>
                 The Art Library <br></p>
 
-              <button class="btn btn-positive btn-block btn-outlined">See full profile</button>
+              <a href="#fullprofile2" data-role="button" data-rel="popup">See full profile</a>
+                  <div data-role="popup" id="fullprofile2">
+                      <a data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                      <h2 id="name">Wendy, 19</h2>
+                      <img src="wendyphoto.jpg" width="100%">
+                      <h4>1 mile away</h4>
+                      <p id="text">
+                        Suggested location: Tower <br>
+                        Year: 2017 <br>
+                        Major: Political Science <br>
+                        Interests: College Govt, Being the president <br></p>
+                  </div>
+                  
               <button class="btn btn-positive btn-block">Message Mate</button>
               <div class="slide-text">
                 <div style="text-align: right" class="icon icon-left-nav"></div>
@@ -81,7 +99,6 @@
                 <div class="icon icon-right-nav"></div>
               </div>
             </div>
-
 
 
     </div>
