@@ -9,6 +9,19 @@
 	text-align: center;
 }
 
+.slider {
+	/*background-color: #ECF0F1;*/
+	background-color: white;
+  	margin-top: 11px;
+  	margin-bottom: 11px;
+  	border: 1px solid #BDC3C7;
+  	border-radius: 25px;
+  }
+
+.profile {
+	padding: 8px;
+}
+
 .content {
 	background-color: #ECF0F1;*/ /*light grey*/
 }
@@ -38,7 +51,7 @@ a:hover {
 	color: ;
 }
 
-.icon-home, .icon-gear, .icon-left-nav, .icon-compose {
+.icon-home, .icon-gear, .icon-left-nav, .icon-compose, .fui-mail, .icon-right-nav {
 	color: #F1C40F;
 }
 
