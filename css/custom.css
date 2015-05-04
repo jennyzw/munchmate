@@ -26,6 +26,13 @@
 	background-color: #ECF0F1;*/ /*light grey*/
 }
 
+.sendMIcon {
+	height: 30px;
+  	width: 30px;
+  	padding-left: 5px;
+ 	padding-bottom: 5px;
+}
+
 .bar, .bar-nav {
 	background-color: #9B59B6; /*light purple*/
 	border-bottom: 1px solid #2C3E50;
@@ -46,7 +53,7 @@ a:hover, a:focus, .btn-link:hover, .btn-link:focus, .btn-link, a, .icon:hover, .
 
 .input-row input {
 	float: left;
-	width: 85%;
+	width: 90%;
 }
 
 .title {
