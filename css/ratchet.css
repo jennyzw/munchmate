@@ -1102,7 +1102,7 @@ select {
 .modal.active {
   height: 100%;
   opacity: 1;
-  -webkit-transition: -webkit-transform .25s;
+  -webkit-transition: -webkit-transform .25s; 
      -moz-transition:    -moz-transform .25s;
           transition:         transform .25s;
   -webkit-transform: translate3d(0, 0, 0);
