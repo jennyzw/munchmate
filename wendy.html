@@ -49,15 +49,23 @@
     </div>
 
 
-<div class="bar bar-standard bar-footer">
-          <form>
-            <div class="input-row">
-              <span class="icon icon-compose media-object">
-              <input type="text" placeholder="Send a message!" width="auto"/>
-              </span>
-            </div> 
-          </form>
-        </div> <!-- //end messaging bar --> 
+  <div class="bar bar-standard bar-footer">
+            <form>
+              <div class="input-row">
+                <button class="btn btn-link btn-nav"><a class="icon" onClick="getMessage()"><img class="sendMIcon" src="messagearrow.png"/></a></button>
+                <input type="text" id="sendMessage" placeholder="Send a message!" />
+              </div> 
+            </form>
+  </div> <!-- //end messaging bar --> 
+
+    <script language="javascript" type="text/javascript">
+      var message;
+        function getMessage(){
+          message = document.getElementById('sendMessage').value;
+          console.log(message);
+          alert(message);
+        }
+    </script>
 </body>
 
 <!-- <footer>

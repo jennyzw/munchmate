@@ -54,20 +54,34 @@
 	background-color: #ECF0F1;*/ /*light grey*/
 }
 
+.sendMIcon {
+	height: 30px;
+  	width: 30px;
+  	padding-left: 5px;
+ 	padding-bottom: 5px;
+}
+
 .bar, .bar-nav {
 	background-color: #9B59B6; /*light purple*/
 	border-bottom: 1px solid #2C3E50;
+	margin-left: -7px;
 }
 
 .bar-footer {
 	border-top: 1px solid #2C3E50;
 }
+
 .input-row {
 	border-bottom: 1px solid #9B59B6 ;
 }
 
-a:hover {
+a:hover, a:focus, .btn-link:hover, .btn-link:focus, .btn-link, a, .icon:hover, .icon:focus {
 	color: #8E44AD;
+}
+
+.input-row input {
+	float: left;
+	width: 90%;
 }
 
 .title {
@@ -81,6 +95,11 @@ a:hover {
 
 .icon-home, .icon-gear, .icon-left-nav, .icon-compose, .fui-mail, .icon-right-nav {
 	color: #F1C40F;
+}
+
+.send {
+	color: #F1C40F;
+	padding: 2px;
 }
 
 .message-icon {
