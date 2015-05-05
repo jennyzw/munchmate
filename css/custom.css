@@ -50,6 +50,16 @@
 	padding: 8px;
 }
 
+.convoGrey {
+	position: relative;
+}
+.response {
+	position: absolute;
+	top: 45px;
+	left: 50px;
+	z-index: 11;
+}
+
 .content {
 	background-color: #ECF0F1;*/ /*light grey*/
 }
@@ -57,6 +67,7 @@
 .sendMIcon {
 	height: 30px;
   	width: 30px;
+  	margin-top: -15px;
   	padding-left: 5px;
  	padding-bottom: 5px;
 }
@@ -93,7 +104,7 @@ a:hover, a:focus, .btn-link:hover, .btn-link:focus, .btn-link, a, .icon:hover, .
 	color: ;
 }
 
-.icon-home, .icon-gear, .icon-left-nav, .icon-compose, .fui-mail, .icon-right-nav {
+.icon-home, .icon-gear, .icon-left-nav, .icon-compose, .fui-mail, .icon-right-nav, .icon-left {
 	color: #F1C40F;
 }
 
