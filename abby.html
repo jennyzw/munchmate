@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
@@ -23,7 +23,7 @@
     
     <script>
       var chatMessages=new Array();
-      var autoResponse=new Array("","convo3.png","convo2.png","convo1.png","convo4.png");
+      var autoResponse=new Array("convo3.png","convo3.png","convo2.png","convo1.png","convo4.png");
     </script>
 
 </head>
@@ -58,8 +58,13 @@
   <div class="bar bar-standard bar-footer">
             <form>
               <div class="input-row">
+<<<<<<< Updated upstream
                 <button class="btn btn-link btn-nav"><a class="icon" onClick="getMessage()"><img class="sendMIcon" src="messagearrow.png"/></a></button>
                 <input type="text" id="sendMessage" placeholder="Send a message!" />
+=======
+                <button class="btn btn-link btn-nav icon" type="button" onClick="getMessage()"><img class="sendMIcon" src="messagearrow.png"/></button>
+                <input type="text" id="sendMessage" class="sendingMessage" placeholder="Send a message!" />
+>>>>>>> Stashed changes
               </div> 
             </form>
   </div> <!-- //end messaging bar --> 
