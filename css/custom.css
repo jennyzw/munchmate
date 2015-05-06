@@ -90,7 +90,7 @@ a:hover, a:focus, .btn-link:hover, .btn-link:focus, .btn-link, a, .icon:hover, .
 	color: #8E44AD;
 }
 
-.input-row input {
+.input-row input.sendingMessage {
 	float: left;
 	width: 90%;
 }
