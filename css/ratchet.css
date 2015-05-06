@@ -905,6 +905,7 @@ select {
 }
 
 .input-row label {
+  white-space: nowrap;
   float: left;
   width: 35%;
   padding: 8px 15px;
