@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
@@ -22,6 +22,11 @@
     <!-- Loading Flat UI -->
     <link href="dist/css/flat-ui.min.css" rel="stylesheet">
 
+
+    <script>
+      var chatMessages=new Array();
+      var autoResponse=new Array("convo3.png","convo3.png","convo2.png","convo1.png","convo4.png");
+    </script>
 </head>
 
 <body>
@@ -32,8 +37,11 @@
   </header> 
 
       <div class="content" align="center">
-        <div class="content-padded">
-          <img src="convo2.png" width="100%"/>
+        <div class="content-padded" id="chat">
+          <img src="convo-greybox.png" id="convoGrey" width="100%"/>
+          <span id="responseOne" class="response"></span>
+          <span id="automatedResponse"><img src="convo-whitebox.png" id="autoImage" width="100%" height="auto"> </span>
+          </div>
 
         
 
@@ -52,18 +60,41 @@
   <div class="bar bar-standard bar-footer">
             <form>
               <div class="input-row">
-                <button class="btn btn-link btn-nav"><a class="icon" onClick="getMessage()"><img class="sendMIcon" src="messagearrow.png"/></a></button>
-                <input type="text" id="sendMessage" placeholder="Send a message!" />
+                <button class="btn btn-link btn-nav icon" type="button" onClick="getMessage()"><img class="sendMIcon" src="messagearrow.png"/></button>
+                <input type="text" id="sendMessage" class="sendingMessage" placeholder="Send a message!" />
               </div> 
             </form>
   </div> <!-- //end messaging bar --> 
 
     <script language="javascript" type="text/javascript">
-      var message;
+      var message, autoNum;
+      var imgGrey = document.getElementById('convoGrey');
+      var imgWhite = document.getElementById('autoImage');
+
         function getMessage(){
+          /* imgGrey.style.visibility = 'hidden';
+          imgWhite.style.visibility = 'hidden';
+            console.log(imgGrey.style.visibility);
+            console.log(imgWhite.style.visibility); */
           message = document.getElementById('sendMessage').value;
-          console.log(message);
-          alert(message);
+            console.log(message);
+            //alert(message);
+          //chatMessages.push(message);
+            //console.log("Chat Messages: " + chatMessages);
+          //document.getElementById('responseOne').innerHTML = chatMessages;
+          autoNum = Math.floor((Math.random() * 4) + 1); //change 4 to whatever amount is in array
+            console.log(autoResponse[autoNum]);
+            //console.log("autoNum" + autoNum);
+          //chatMessages.push(autoResponse[autoNum]);
+            //console.log("Chat Messages after Auto: " + chatMessages);
+          document.getElementById('responseOne').innerHTML = message;
+          document.getElementById('autoImage').src = autoResponse[autoNum];
+          //document.getElementById("chat").innerHTML=chatMessages;
+
+          /*imgGrey.style.visibility = 'visible';
+          imgWhite.style.visibility = 'visible';
+            console.log(imgGrey.style.visibility);
+            console.log(imgWhite.style.visibility); */
         }
     </script>
 </body>
