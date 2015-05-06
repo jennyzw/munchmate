@@ -612,7 +612,7 @@ input[type="button"] {
 }
 
 .bar .btn-nav.pull-left {
-  margin-left: -5px;
+  margin-left: 0px;
 }
 .bar .btn-nav.pull-left .icon-left-nav {
   margin-right: -3px;
