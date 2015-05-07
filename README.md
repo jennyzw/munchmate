@@ -2,6 +2,7 @@ MunchMate
 =====
 
 http://cs.wellesley.edu/~teamunch/
+
 http://cs.wellesley.edu/~teamunch/app/checkin.html
 
 ## Munchmate
