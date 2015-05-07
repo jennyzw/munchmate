@@ -37,19 +37,13 @@
 
       <div class="content" align="center">
         <div class="content-padded" id="chat">
-          <img src="convo-greybox.png" id="convoGrey" width="100%"/>
+          <img src="" id="convoGrey" width=""/>
           <span id="responseOne" class="response"></span>
-          <span id="automatedResponse"><img src="convo-whitebox.png" id="autoImage" width="100%" height="auto"> </span>
+          <span id="automatedResponse">
+            <!-- automated response generated here-->
+          </span>
           </div>
 
-        <!-- <div class="bar bar-standard bar-footer">
-          <form>
-            <div class="input-row">
-              <a class="icon"><img src="messages-icon.png" width="auto" height="15px" /></a>
-              <input type="text" placeholder="Send a message!" />
-            </div> 
-          </form>
-        </div> --> <!-- //end messaging bar -->
       </div>
     </div>
 
@@ -64,47 +58,20 @@
 
     <script language="javascript" type="text/javascript">
       var message, autoNum;
-      var imgGrey = document.getElementById('convoGrey');
-      var imgWhite = document.getElementById('autoImage');
 
         function getMessage(){
-          /* imgGrey.style.visibility = 'hidden';
-          imgWhite.style.visibility = 'hidden';
-            console.log(imgGrey.style.visibility);
-            console.log(imgWhite.style.visibility); */
           message = document.getElementById('sendMessage').value;
-            console.log(message);
-            //alert(message);
-          //chatMessages.push(message);
-            //console.log("Chat Messages: " + chatMessages);
-          //document.getElementById('responseOne').innerHTML = chatMessages;
+            //console.log(message);
           autoNum = Math.floor((Math.random() * 4) + 1); //change 4 to whatever amount is in array
-            console.log(autoResponse[autoNum]);
-            //console.log("autoNum" + autoNum);
-          //chatMessages.push(autoResponse[autoNum]);
-            //console.log("Chat Messages after Auto: " + chatMessages);
+            //console.log(autoResponse[autoNum]);
+          document.getElementById('convoGrey').src = "convo-greybox.png";
+          document.getElementById('convoGrey').style.width = "100%";
           document.getElementById('responseOne').innerHTML = message;
-          document.getElementById('autoImage').src = autoResponse[autoNum];
-          //document.getElementById("chat").innerHTML=chatMessages;
 
-          /*imgGrey.style.visibility = 'visible';
-          imgWhite.style.visibility = 'visible';
-            console.log(imgGrey.style.visibility);
-            console.log(imgWhite.style.visibility); */
+          var aiResponse = "<img src='"+ autoResponse[autoNum] +"' id='autoImage' width='100%' height='auto'>"
+          document.getElementById('automatedResponse').innerHTML = aiResponse;
         }
     </script>
 </body>
-
-<!-- <footer>
-  <div class="bar bar-standard bar-footer">
-          <form>
-            <div class="input-row">
-              <span class="icon icon-compose media-object">
-              <input type="text" placeholder="Send a message!" width="auto"/>
-              </span>
-            </div> 
-          </form>
-        </div> --> <!-- //end messaging bar --> 
-<!-- </footer> -->
 
 </html>

@@ -17,6 +17,7 @@ html {
 
 body {
   margin: 0;
+  color: #777;
 }
 
 article,
@@ -32,6 +33,13 @@ nav,
 section,
 summary {
   display: block;
+}
+
+
+ .slideme{
+  font-size: 18px;
+  text-align: center;
+  color:#F1C40F;
 }
 
 audio,
@@ -692,10 +700,11 @@ input[type="button"] {
 }
 
 .card {
-  margin: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   overflow: hidden;
   background-color: white;
-  border: 1px solid #ddd;
+  border: 1px solid #9B59B6;
   border-radius: 6px;
 }
 
@@ -1235,7 +1244,7 @@ select {
   font-family: Ratchicons;
   font-size: inherit;
   line-height: 1;
-  color: #bbb;
+  color: #9B59B6;
   text-decoration: none;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
